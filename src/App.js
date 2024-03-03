@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRoutes } from "react-router-dom";
+// import Signup from "./signup/signup.jsx";
+import Login from "./login/login.jsx"
+import Home from "./home/Home.jsx";
+import Navbar from "./navbar/Navbar.jsx";
+import Employeelist from "./employeelist/Employeelist.jsx";
+import Createemployeelist from "./createemployee/Createemployee.jsx";
+import Signup from "./signup/signup.jsx";
+
 
 function App() {
+
+
+  let route=useRoutes([
+    {
+      path:"/",
+    element:<Home/>
+    },
+    {
+      path:"/employeelist",
+    element:<Employeelist/>
+    },
+    {
+      path:"/createemployee",
+    element:<Createemployeelist/>
+    },
+    {
+      path:"/login",
+      element:<Login/>,
+    },
+    {
+      path:"/signup",
+      element:<Signup/>,
+    },
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <Navbar navpath={{url1:"/",url2:"/login",url3:"/employeelist"}}/>
+      {route}
     </div>
   );
 }

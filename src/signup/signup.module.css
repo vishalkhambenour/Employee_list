@@ -1,0 +1,64 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html
+{
+    width: 100%;
+    
+
+}
+
+.main
+{
+    /* border: 2px solid red; */
+    width: 600px;
+    box-shadow: 10px 10px 100px 1px rgba(0, 0, 0, 0.558);
+    padding: 30px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    flex-direction: column;
+    gap: 20px;
+    background-color: beige;
+}
+
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+   
+}
+
+.Form Input
+{
+    padding: 12px;
+    border: none;
+}
+.samediv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.Form  button
+{
+    border: none;
+    background-color: lightgreen;
+    height: 40px;
+}
+
+.myeye
+{
+    position: absolute;
+    right: 751px;
+    top: 465px;
+}

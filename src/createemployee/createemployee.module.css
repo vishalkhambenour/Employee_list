@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html
+{
+    width: 100%;
+}
+
+.mainnew
+{
+    /* border: 2px solid red; */
+    width: 800px;
+    box-shadow: 10px 10px 100px 1px rgba(0, 0, 0, 0.558);
+    padding: 30px;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    flex-direction: column;
+    gap: 20px;
+    background-color: beige;
+}
+
+.Formnew{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+   
+}
+
+.Formnew Input
+{
+    padding: 12px;
+    border: none;
+}
+.samedivnew
+{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+
+}
+.Formnew button
+{
+    border: none;
+    background-color: lightgreen;
+    height: 40px;
+}
+
+.myeyenew
+{
+    position: absolute;
+    right: 751px;
+    top: 465px;
+}
