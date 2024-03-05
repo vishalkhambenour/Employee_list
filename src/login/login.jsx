@@ -36,7 +36,7 @@ export default function Login() {
             setTimeout(()=>{
               setmessage("")
               navigateto("/");
-            },2000)
+            },1000)
           }
     } catch (err) {
       console.log("catch");
@@ -61,7 +61,7 @@ export default function Login() {
           register={{ ...register("filedinput") }} 
           errorMessage={errors.filedinput?.message}
         />
-        <p>Password</p>
+        <p>Password</p>                 
         <Input
           type={(eye === false)?"password":"text"}
           placeholder={"Enter your password"}

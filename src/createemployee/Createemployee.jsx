@@ -35,7 +35,6 @@ export default function Createemployeelist() {
   let location = useLocation();
   useEffect(() => {
     if (location.state) {
-
       const fetchemployeedetails = async () => {
         try {
           const { data } = await axios.get(

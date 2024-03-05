@@ -13,7 +13,7 @@ export default function Home() {
       </h1>:<h1>
         {showinui
           ? "Welcome" + " " + showinui.toUpperCase()
-          : "Welcome as a Guest"}
+          : ""}
       </h1>
       }
 

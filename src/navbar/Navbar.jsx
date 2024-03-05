@@ -43,12 +43,12 @@ export default function Navbar({navpath:{url1,url2,url3}}){
         </Typography>
         <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
-            <Link to={url1} ><Button>Home</Button></Link>
+            {localStorage.getItem("token")&&  <Link to={url1} ><Button>Home</Button></Link>}
             {localStorage.getItem("token")  && <Link to={url3} ><Button>Employeelist</Button></Link>}
             {localStorage.getItem("token") ? <h4 style={{margin:"3px 32px 10px 20px"}}>{localStorage.getItem("fullname")}</h4>: <Link to={url2} ><Button>Login</Button></Link>} 
           
             
-            <Link to={url2} onClick={Logout}><Button>Logout</Button></Link>
+           {localStorage.getItem("token")&& <Link to={url2} onClick={Logout}><Button>Logout</Button></Link>}
         </Box>
       </Toolbar>
     </AppBar>
